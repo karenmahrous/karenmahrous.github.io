@@ -701,6 +701,7 @@ body.dark-mode {
 
 body.dark-mode main {
   background-color: #121212;
+  background-image: none;
 }
 
 body.dark-mode .card {
