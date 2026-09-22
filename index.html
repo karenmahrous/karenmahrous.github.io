@@ -89,6 +89,12 @@
         </a>
       </li>
 
+      <li class="bold" style="text-align: center; margin-top: 10px;">
+        <a id="dark-mode-toggle" href="#" aria-label="Toggle dark mode" class="waves-effect waves-dark teal-text">
+          <i class="mdi-toggle-star small"></i><span>Dark Mode</span>
+        </a>
+      </li>
+
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
@@ -590,7 +596,7 @@
       })
     })
   </script>
-  
+
   <!-- Dynamic Projects Rendering -->
   <script>
     let projectsShown = 0;
@@ -635,6 +641,17 @@
       renderProjects(projectsPerLoad);
     });
   </script>
+
+  <!-- Dark Mode Toggle -->
+  <script>
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+    darkModeToggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+  
 </body>
 
 </html>
